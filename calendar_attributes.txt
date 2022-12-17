@@ -1,0 +1,71 @@
+service_id,service_description,service_schedule_name,service_schedule_type,service_schedule_typicality,rating_start_date,rating_end_date,rating_description
+BUS42022-hba42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbb42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbc42fr1-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbc42wk1-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbf42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbg42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbl42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbq42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbs42sw1-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+BUS42022-hbt42011-Wdy-02,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+Boat-EastBoston-Wdy-Fall-22,Weekday schedule,Weekday,Weekday,1,20220828,,Fall
+Boat-F1-Wdy-Fall-22,Weekday schedule,Weekday,Weekday,1,20220828,,Fall
+Boat-F4-Sa-Fall-22,Saturday schedule,Saturday,Saturday,1,20220828,,Fall
+Boat-F4-Su-Fall-22,Sunday schedule,Sunday,Sunday,1,20220828,,Fall
+Boat-F4-Wdy-Fall-22,Weekday schedule,Weekday,Weekday,1,20220828,,Fall
+CR-Newburyport-LynnShuttleFall-Snd,Sunday schedule,Sunday,Sunday,4,20221017,,Fall/Winter
+CR-Newburyport-LynnShuttleFall-Std,Saturday schedule,Saturday,Saturday,4,20221017,,Fall/Winter
+CR-Newburyport-LynnShuttleFall-Wkd,Weekday schedule,Weekday,Weekday,4,20221017,,Fall/Winter
+FALL 2022-N-Sa-1,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-N-Sa-1-S72,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-N-Sa-11,Saturday schedule (modified service),Saturday (modified service),Saturday,4,20221017,,Fall/Winter
+FALL 2022-N-Sa-5,Saturday schedule (modified service),Saturday (modified service),Saturday,4,20221017,,Fall/Winter
+FALL 2022-N-Sa-6,Saturday schedule (modified service),Saturday (modified service),Saturday,4,20221017,,Fall/Winter
+FALL 2022-N-Su-1,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FALL 2022-N-Su-11,Sunday schedule (modified service),Sunday (modified service),Sunday,4,20221017,,Fall/Winter
+FALL 2022-N-Su-5,Sunday schedule (modified service),Sunday (modified service),Sunday,4,20221017,,Fall/Winter
+FALL 2022-N-Su-6,Sunday schedule (modified service),Sunday (modified service),Sunday,4,20221017,,Fall/Winter
+FALL 2022-N-Wdy-1,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-N-Wdy-1-S6d,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-N-Wdy-1-S72,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-N-Wdy-5,Weekday schedule (modified service),Weekday (modified service),Weekday,4,20221017,,Fall/Winter
+FALL 2022-N-Wdy-6,Weekday schedule (modified service),Weekday (modified service),Weekday,4,20221017,,Fall/Winter
+FALL 2022-S-Sa-1,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-S859962ef-MDLBrnSthDnc,Saturday schedule,Saturday,Saturday,4,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-S86,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-Sb4,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-Sb7371956-GRBBrnSthDnc,Saturday schedule,Saturday,Saturday,4,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-Sc5,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+FALL 2022-S-Sa-1-Sc9a3b080-KNGBrnSthDnc,Saturday schedule,Saturday,Saturday,4,20221017,,Fall/Winter
+FALL 2022-S-Su-1,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FALL 2022-S-Su-1-S859962ef-MDLBrnSthDnc,Sunday schedule,Sunday,Sunday,4,20221017,,Fall/Winter
+FALL 2022-S-Su-1-S86,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FALL 2022-S-Su-1-Sb4,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FALL 2022-S-Su-1-Sb7371956-GRBBrnSthDnc,Sunday schedule,Sunday,Sunday,4,20221017,,Fall/Winter
+FALL 2022-S-Su-1-Sc5,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FALL 2022-S-Su-1-Sc9a3b080-KNGBrnSthDnc,Sunday schedule,Sunday,Sunday,4,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-S86,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-S8f,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-Sb4,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-Sb6,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-Sc0,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-1-Sc5,Weekday schedule,Weekday,Weekday,1,20221017,,Fall/Winter
+FALL 2022-S-Wdy-70,Weekday schedule (modified service),Weekday (modified service),Weekday,4,20221017,,Fall/Winter
+FllSnd,Sunday schedule,Sunday,Sunday,1,20220828,20221217,Fall
+FllStd,Saturday schedule,Saturday,Saturday,1,20220828,20221217,Fall
+FlrSnd,Sunday schedule,Sunday,Sunday,1,20221017,,Fall/Winter
+FlrStd,Saturday schedule,Saturday,Saturday,1,20221017,,Fall/Winter
+LRV42022-hlb42011-Wdy-01,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+LRV42022-hlm42011-Wdy-01,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+PRIV42022-hpa42011-Wdy-01,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+PRIV42022-hpj42011-Wdy-01,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+PRIV42022-hpp42011-Wdy-01,Weekday schedule,Weekday,Weekday,1,20220828,20221217,Fall
+RTL42022-hmb42l31-Sa-01,Weekday schedule (reduced service),Weekday (reduced service),Weekday,5,20220828,20221217,Fall
+RTL42022-hmo42l31-Sa-01,Weekday schedule (reduced service),Weekday (reduced service),Weekday,5,20220828,20221217,Fall
+RTL42022-hms42016-Sa-01,Saturday schedule,Saturday,Saturday,1,20220828,20221217,Fall
+RTL42022-hms42016-Sa-01-AstJFKBrrJFK,Saturday schedule,Saturday,Saturday,4,20220828,20221217,Fall
+RTL42022-hms42017-Su-01,Sunday schedule,Sunday,Sunday,1,20220828,20221217,Fall
+RTL42022-hms42017-Su-01-AstJFKBrrJFK,Sunday schedule,Sunday,Sunday,4,20220828,20221217,Fall
+RTL42022-hms42l31-Sa-01,Weekday schedule (reduced service),Weekday (reduced service),Weekday,5,20220828,20221217,Fall

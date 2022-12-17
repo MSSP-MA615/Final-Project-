@@ -1,0 +1,489 @@
+---
+title: "MBTA EDA Report"
+author: "Tao Guo"
+date: "2022-12-07"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(magrittr)
+library(plotly)
+library(ggplot2)
+library(leaflet)
+library(mapsapi)
+library(MBTAr)
+library(shiny)
+library(grid)
+library(gridExtra)
+library(kableExtra)
+
+calendar <- read.delim("calendar.txt", ",",header = TRUE)
+calendar_attributes <- read.delim("calendar_attributes.txt", ",",header = TRUE)
+route <- read.delim("routes.txt",",",header = TRUE)
+
+stops <- read.delim("stops.txt",",",header = TRUE)
+stop_times <- read.delim("stop_times.txt",",",header = TRUE)
+
+
+
+
+route_patetrns <- read.delim("route_patterns.txt",",",header = TRUE)
+routes <- read.delim("routes.txt",",",header = TRUE)
+
+
+trips_properties <- read.delim("trips_properties.txt",",",header = TRUE)
+trips_properties_definitions <- read.delim("trips_properties_definitions.txt",",",header = TRUE)
+trips <- read.delim("trips.txt",",",header = TRUE)
+```
+
+## Introduction
+The Massachusetts Bay Transportation Authority (MBTA) is a public transportation agency that operates a variety of transportation services in the Boston area, including buses, trains, subways ,and ferries. The MBTA operates four subway lines (the Red, Blue, Orange, and Green Lines), as well as several commuter rail lines that serve outlying suburbs and communities. The MBTA also operates a network of bus routes throughout the region, as well as the Silver Line, a bus rapid transit service that runs between South Boston and downtown Boston. In addition, the MBTA operates a number of ferries that provide transportation between various points in the Boston area and surrounding communities.
+```{r, warning=FALSE, echo=FALSE, fig.cap="Routes Counts of Different Transportation"}
+routes_name <- routes %>% select(route_id, route_long_name, route_desc, route_type)
+trips_total <- trips %>% full_join(routes_name, by="route_id")
+count <- trips_total %>% group_by(route_desc) %>% count()
+ggplot(count, aes(x=route_desc, y=n, color=route_desc))+
+  geom_bar(stat = "identity",fill="white")+coord_flip()+
+  ggtitle("Total Routes Counts MBTA")
+```
+<br>
+
+The figure 1 shows counts of different transportation in MBTA. This figure indicates Bus  and Rapid Transit are major transportation in Boston. 
+
+<br>
+```{r, echo=FALSE}
+Bus <- trips_total %>% filter(route_type==3)
+Commuter_Rail <- trips_total %>% filter(route_type==2)
+Rapid_Transit <- trips_total %>% filter(route_type==0|route_type==1)
+Ferry <- trips_total %>% filter(route_type==4)
+```
+
+```{r,echo=FALSE}
+saturday_calendar <- calendar %>% filter(sunday==1) %>% select(service_id, start_date, end_date)
+Rapid_Transit_saturday <- Rapid_Transit %>% inner_join(saturday_calendar, by="service_id")
+```
+
+## Rapid Transit
+The Rapid Transit system is the primary public transportation system for the city of Boston and the surrounding areas. It is operated by the MBTA and consists of four subway lines (the Red, Blue, Orange, and Green Lines) and one bus rapid transit line (the Silver Line).
+
+The Red Line is the oldest and busiest of the MBTA subway lines, running from Alewife in the north to Ashmont and Braintree in the south. The Blue Line runs from Bowdoin in the east to Wonderland in the west, while the Orange Line runs from Oak Grove in the north to Forest Hills in the south. The Green Line has four branches: the B, C, D, and E lines. The B, C, and D lines run from Boston College in the west to Park Street and Lechmere in the east, while the E line runs from Heath Street in the west to Lechmere in the east.
+
+
+```{r, fig.cap="Total Route Counts Rapid Transit on Saturday" ,fig.height=3.6, fig.width=10, echo=FALSE}
+NumOfTripsByType <- Rapid_Transit_saturday %>% group_by(route_id)%>% count()
+ggplot(NumOfTripsByType, aes(x=route_id, y=n, color=route_id))+
+  geom_bar(stat = "identity",fill="white")+
+  ggtitle("Total Route Counts Rapid Transit on Saturday")
+```
+The figure 3 and 4 shows Rapid Transit have different schedule between weekday and weekend. In weekdays,different lines almost have same routes numbers of each lines, but in weekends, the Red Line is obvious have greater routes number than others.
+
+It is common for public transportation systems to have different schedules on weekdays and weekends. The demand for public transportation is often higher on weekdays due to commuting to work and school, so the schedules may be more frequent and the routes may be more extensive. On weekends, demand for public transportation may be lower, so the schedules may be less frequent and the routes may be more limited.
+
+```{r, echo=FALSE, message=FALSE,error=FALSE,warning=FALSE,fig.cap="Total Route Counts Rapid Transit Weekday",,fig.height=3.6, fig.width=10}
+calendar_weekday <- calendar_attributes %>% filter(service_schedule_type=="Weekday")
+Rapid_Transit_weekday <- Rapid_Transit %>% inner_join(calendar_weekday, by="service_id")
+NumOfTripsByType1 <- Rapid_Transit_weekday %>% group_by(route_id)%>% count()
+ggplot(NumOfTripsByType1, aes(x=route_id, y=n, color=route_id))+
+  geom_bar(stat = "identity",fill="white")+
+  ggtitle("Total Route Counts Rapid Transit Weekday")
+```
+
+
+```{r, echo=FALSE}
+stops_with_times <- inner_join(stop_times, stops, by="stop_id")
+trip_Id_name <- trips_total %>% select(trip_id, route_id,service_id ,route_desc, route_long_name)
+trips_stopstimes <- inner_join(trip_Id_name, stops_with_times, by="trip_id")
+```
+
+
+
+```{r, echo=FALSE}
+red_stoptime <- trips_stopstimes %>% filter(route_id=="Red")
+greenb_stoptime <- trips_stopstimes %>% filter(route_id=="Green-B")
+greenc_stoptime <- trips_stopstimes %>% filter(route_id=="Green-C")
+greend_stoptime <- trips_stopstimes %>% filter(route_id=="Green-D")
+greene_stoptime <- trips_stopstimes %>% filter(route_id=="Green-E")
+blue_stoptime <- trips_stopstimes %>% filter(route_id=="Blue")
+orange_stoptime <- trips_stopstimes %>% filter(route_id=="Orange")
+red_stop <- red_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+greenb_stop <- greenb_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+greenc_stop <- greenc_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+greend_stop <- greend_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+greene_stop <- greene_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+blue_stop <- blue_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+orange_stop <- orange_stoptime %>% select(stop_name, stop_lat, stop_lon) %>% unique()
+write.csv(trips_stopstimes, "trips_stopstimes.csv")
+```
+
+```{r, echo=FALSE, results='hide'}
+
+
+MBTAStaticMap <- leaflet() %>% 
+  setView(lng = -71.0589, lat = 42.3601, zoom = 12) %>% 
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolylines(as.numeric(red_stop[1:17,]$stop_lon),as.numeric(red_stop[1:17,]$stop_lat),color="red") %>%
+  addCircleMarkers(as.numeric(red_stop[1:17,]$stop_lon),as.numeric(red_stop[1:17,]$stop_lat),radius=1,popup = red_stop[1:17,]$stop_name) %>%
+  
+    addPolylines(as.numeric(red_stop[18:23,]$stop_lon),as.numeric(red_stop[18:23,]$stop_lat),color="red") %>%
+  addCircleMarkers(as.numeric(red_stop[18:23,]$stop_lon),as.numeric(red_stop[18:23,]$stop_lat),radius=1,popup = red_stop[18:23,]$stop_name)%>%
+
+  addPolylines(as.numeric(greenb_stop[1:23,]$stop_lon),as.numeric(greenb_stop[1:23,]$stop_lat),color="green") %>%
+  addCircleMarkers(as.numeric(greenb_stop[1:23,]$stop_lon),as.numeric(greenb_stop[1:23,]$stop_lat),radius=1,popup = greenb_stop[1:23,]$stop_name)%>%
+  
+    addPolylines(as.numeric(greenc_stop[7:20,]$stop_lon),as.numeric(greenc_stop[7:20,]$stop_lat),color="green") %>%
+  addCircleMarkers(as.numeric(greenc_stop[7:20,]$stop_lon),as.numeric(greenc_stop[7:20,]$stop_lat),radius=1,popup = greenc_stop[7:20,]$stop_name)%>%
+  
+  addPolylines(as.numeric(greend_stop[1:25,]$stop_lon),as.numeric(greend_stop[1:25,]$stop_lat),color="green") %>%
+  addCircleMarkers(as.numeric(greend_stop[1:25,]$stop_lon),as.numeric(greend_stop[1:25,]$stop_lat),radius=1,popup = greend_stop[1:25,]$stop_name)%>%
+  
+    addPolylines(as.numeric(greene_stop[1:20,]$stop_lon),as.numeric(greene_stop[1:20,]$stop_lat),color="green") %>%
+  addCircleMarkers(as.numeric(greene_stop[1:20,]$stop_lon),as.numeric(greene_stop[1:20,]$stop_lat),radius=1,popup = greene_stop[1:20,]$stop_name)%>%
+  
+  addPolylines(as.numeric(blue_stop[1:12,]$stop_lon),as.numeric(blue_stop[1:12,]$stop_lat),color="blue") %>%
+  addCircleMarkers(as.numeric(blue_stop[1:12,]$stop_lon),as.numeric(blue_stop[1:12,]$stop_lat),radius=1,popup = blue_stop[1:12,]$stop_name)%>%
+  
+    addPolylines(as.numeric(orange_stop[1:20,]$stop_lon),as.numeric(orange_stop[1:20,]$stop_lat),color="orange") %>%
+  addCircleMarkers(as.numeric(orange_stop[1:20,]$stop_lon),as.numeric(orange_stop[1:20,]$stop_lat),radius=1,popup = orange_stop[1:20,]$stop_name)
+
+MBTAStaticMap 
+
+```
+```{r, echo=FALSE}
+service_schedule <- calendar_attributes %>% select(service_id, service_schedule_type, service_schedule_name)
+weekschedule <- service_schedule %>% filter(service_schedule_type=="Weekday")
+weekendschedule <- service_schedule %>% filter(service_schedule_type=="Sunday"|service_schedule_type=="Saturday")
+weekday_trips <- inner_join(trips_stopstimes, weekschedule, by="service_id")
+RT_weekday_trips <- weekday_trips  %>% filter(route_desc=="Rapid Transit")
+
+```
+```{r, echo=FALSE}
+HRTravelTimesQ4_21 <- read.csv("HRTravelTimesQ4_21.csv")
+LRTravelTimesQ4_21 <- read.csv("LRTravelTimesQ4_21.csv")
+```
+```{r, echo=FALSE}
+weeks_2021_11 <-c("2021-11-01","2021-11-05", "2021-11-06")
+weeks_2021_10 <-c("2021-10-01","2021-10-03", "2021-10-04")
+weeks_2021_12 <-c("2021-12-01","2021-12-03", "2021-12-04")
+weeks_2021_10_11_12 <- c(weeks_2021_11, weeks_2021_10,weeks_2021_12)
+Subway_4m_HR <- HRTravelTimesQ4_21 %>% filter(service_date %in% weeks_2021_10_11_12)
+Subway_4m_LR <- LRTravelTimesQ4_21 %>% filter(service_date %in% weeks_2021_10_11_12)
+subway_4m <- rbind(Subway_4m_HR, Subway_4m_LR)
+
+```
+
+
+
+```{r, echo=FALSE}
+rapid_stop_name <- stops_with_times %>% filter(vehicle_type==0|vehicle_type==1) %>% select(stop_id, stop_sequence, stop_name, stop_lon, stop_lat) %>% distinct()
+rapid_stop_name$stop_id <- as.numeric(rapid_stop_name$stop_id)
+subway_4m %<>% inner_join(rapid_stop_name, by=c("from_stop_id" ="stop_id"))
+colnames(subway_4m)[9] <- "from_stop_sequence"
+colnames(subway_4m)[10] <- "from_stop_name"
+colnames(subway_4m)[11] <- "from_stop_lon"
+colnames(subway_4m)[12] <- "from_stop_lat"
+
+subway_4m %<>% inner_join(rapid_stop_name, by=c("to_stop_id" ="stop_id")) 
+colnames(subway_4m)[9] <- "from_stop_sequence"
+colnames(subway_4m)[10] <- "from_stop_name"
+colnames(subway_4m)[11] <- "from_stop_lon"
+colnames(subway_4m)[12] <- "from_stop_lat"
+
+
+```
+
+
+```{r, fig.cap="Travel Time distribution Allston to BU Central", echo=FALSE,fig.height=3.6, fig.width=10}
+subway_4m_weekday <- subway_4m %>%filter(service_date=="2021-12-01" | service_date=="2021-11-01"|service_date=="2021-10-04")
+sample_subway <- subway_4m_weekday %>% filter(from_stop_name=="Allston Street"&stop_name=="Boston University Central")
+SamplingPlot1 <- ggplot(sample_subway, aes(x=travel_time_sec))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time distribution weekday")
+
+subway_4m_weekend <- subway_4m %>%filter(service_date=="2021-12-03" | service_date=="2021-11-05"|service_date=="2021-10-01"|service_date=="2021-10-02"|service_date=="2021-11-06")
+sample_subway1 <- subway_4m_weekend %>% filter(from_stop_name=="Allston Street"&stop_name=="Boston University Central")
+
+SamplingPlot2 <- ggplot(sample_subway1, aes(x=travel_time_sec))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time distribution weekend")
+grid.arrange(SamplingPlot1, SamplingPlot2, ncol=2)
+```
+
+Although weekdays have more people take Rapid Transit, the travel time from Allston to BU Central between weekday and weekend is closer. 
+### Travel Time Plot of Different Lines
+
+```{r, echo=FALSE,,fig.height=3.6, fig.width=10}
+RedLine <- subway_4m %>% filter(route_id=="Red")
+BlueLine <- subway_4m%>% filter(route_id=="Blue")
+OrangeLine <- subway_4m %>% filter(route_id=="Orange")
+GreenBLine <- subway_4m %>% filter(route_id=="Green-B")
+GreenCLine <- subway_4m %>% filter(route_id=="Green-C")
+GreenDLine <- subway_4m %>% filter(route_id=="Green-D")
+GreenELine <- subway_4m %>% filter(route_id=="Green-E")
+
+```
+```{r, warning=FALSE, echo=FALSE,fig.height=3.6, fig.width=10}
+RedLineTrvTimeBoxPlot <- RedLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Red Line Travel Time Each Stop")
+RedLineTrvTimeBoxPlot
+
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+BlueLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Blue Line Travel Time Each Stop")
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+OrangeLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Orange Line Travel Time Each Stop")
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+GreenBLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Green-B Line Travel Time Each Stop")
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+GreenCLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Green-C Line Travel Time Each Stop")
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+GreenDLine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Green-D Line Travel Time Each Stop")
+```
+```{r, echo=FALSE,fig.height=3.6, fig.width=10}
+GreenELine %>%
+  ggplot( aes(x=from_stop_name, y=travel_time_sec, fill=from_stop_name)) + 
+    geom_boxplot() +
+    xlab("Stop Name") +
+    theme(legend.position="none")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  ggtitle("Green-E Line Travel Time Each Stop")
+```
+
+
+```{r,echo=FALSE}
+
+
+MBTA_Bus_Arrival_Departure_Times_2022_01 <- read.csv("MBTA-Bus-Arrival-Departure-Times_2022-01.csv")
+MBTA_Bus_Arrival_Departure_Times_2022_05 <- read.csv("MBTA-Bus-Arrival-Departure-Times_2022-05.csv")
+MBTA_Bus_Arrival_Departure_Times_2022_08 <- read.csv("MBTA-Bus-Arrival-Departure-Times_2022-08.csv")
+MBTA_Bus_Arrival_Departure_Times_2022_11 <- read.csv("MBTA-Bus-Arrival-Departure-Times_2022-11.csv")
+weeks_2021_01 <-c("2022-01-01","2022-01-02","2022-01-03","2022-01-04","2022-01-05","2022-01-06","2022-01-07")
+weeks_2021_05 <-c("2022-05-01","2022-05-02","2022-05-03","2022-05-04","2022-05-05","2022-05-06","2022-05-07") 
+weeks_2021_08 <-c("2022-08-01","2022-08-02","2022-08-03","2022-08-04","2022-08-05","2022-08-06","2022-08-07")
+weeks_2021_11 <-c("2022-11-01","2022-11-02","2022-11-03","2022-11-04","2022-11-05","2022-11-06","2022-11-07")
+weeks_bus_times_01 <- MBTA_Bus_Arrival_Departure_Times_2022_01 %>% filter(service_date %in% weeks_2021_01)
+weeks_bus_times_05 <- MBTA_Bus_Arrival_Departure_Times_2022_05 %>% filter(service_date %in% weeks_2021_05)
+weeks_bus_times_08 <- MBTA_Bus_Arrival_Departure_Times_2022_08 %>% filter(service_date %in% weeks_2021_08)
+weeks_bus_times_11 <- MBTA_Bus_Arrival_Departure_Times_2022_11 %>% filter(service_date %in% weeks_2021_11)
+bus_times_4m <- rbind(weeks_bus_times_01, weeks_bus_times_05, weeks_bus_times_08, weeks_bus_times_11) 
+
+```
+
+## MBTA BUS
+The MBTA operates a network of bus routes throughout the Greater Boston area. The MBTA bus system serves a wide variety of destinations, including downtown Boston, suburban communities, and major shopping, entertainment, and cultural centers.
+
+There are several different types of bus services operated by the MBTA, including local, express, and limited-stop buses. Local buses operate throughout the region and make all stops along their routes. Express buses provide faster service by skipping some stops and may be used for longer trips or to connect with other transportation services, such as the subway or commuter rail. Limited-stop buses only make stops at major transfer points and destinations, providing a faster trip for riders.
+Figure 1 shows the major bus service is key bus and local bus in Boston  
+```{r echo=FALSE,message=FALSE,fig.cap="number of types of bus services",fig.height=3.6, fig.width=10}
+df <- Bus %>% group_by(route_desc)%>% count() 
+
+df %>% ggplot( aes(x=route_desc, y=n, color=route_desc))+
+  geom_bar(stat = "identity",fill="white")+
+  ggtitle("Number of Bus Routes")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r, echo=FALSE}
+bus_route01 <- bus_times_4m  %>% filter(route_id=="01")
+```
+```{r, echo=FALSE, warning=FALSE}
+bus_route01_from <-  bus_route01 %>% rename("from_stop_id"=stop_id)
+bus_route01_to <-  bus_route01 %>% rename("to_stop_id"=stop_id)
+
+comb <- bus_route01 %>% 
+  group_by(half_trip_id) %>% 
+  summarise(stop_id = combn(stop_id, 2, simplify = F)) %>% 
+  unnest_wider(stop_id, names_sep = "_")
+
+
+comb %<>% rename("from_stop_id"=stop_id_1, "to_stop_id"=stop_id_2)
+bus_route01_from %<>% rename("start_time"=actual, "time_point_start"=time_point_order) %>% select(1:5,7,11)
+comb %<>% left_join(bus_route01_from, by=c("from_stop_id","half_trip_id"))
+bus_route01_to %<>%  rename("end_time"=actual, "time_point_end"=time_point_order) %>% select(4,5,7,11)
+comb %<>% left_join(bus_route01_to, by=c("to_stop_id","half_trip_id"))
+
+comb$start_time <- as.character(comb$start_time)
+comb$end_time <- as.character(comb$end_time)
+comb %<>% filter(start_time!= "" & end_time!= "")
+
+route01 <- comb %>% mutate(time= difftime(end_time, start_time,units="mins"))
+route01$time <- abs(round(as.numeric(route01$time)))
+```
+
+The next two figure is the travel time distribution of bus route 01 in four season. In winter and fall, the travel time is relative longer than summer and spring. In winter and fall, temperature is lower so there may be more people take bus than warm weather. More workloads may casue longer travel time. 
+```{r, fig.cap="Travel Time Distribution Bus 01", echo=FALSE,fig.height=3.6, fig.width=10}
+route_01_week1 <- route01 %>% filter(service_date %in% weeks_2021_01)
+route_01_week2 <- route01 %>% filter(service_date %in% weeks_2021_05)
+p1 <- route_01_week1 %>% ggplot(aes(x=time))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time in Winter")
+p2 <- route_01_week2 %>% ggplot(aes(x=time))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time in Spring")
+grid.arrange(p1,p2, ncol=2)
+```
+```{r, fig.cap="Travel Time Distribution Bus 01", echo=FALSE,fig.height=3.6, fig.width=10}
+route_01_week3 <- route01 %>% filter(service_date %in% weeks_2021_08)
+route_01_week4 <- route01 %>% filter(service_date %in% weeks_2021_11)
+p3 <- route_01_week3 %>% ggplot(aes(x=time))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time in Summer")
+p4 <- route_01_week4 %>% ggplot(aes(x=time))+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Travel Time in Fall")
+grid.arrange(p3,p4, ncol=2)
+```
+
+
+```{r, echo=FALSE}
+commuter_bus <- Bus %>% filter(route_desc=="Commuter Bus")
+commuter_bus_stops <- stops_with_times %>% select(trip_id, arrival_time,stop_id,stop_sequence, stop_name, stop_lon, stop_lat)%>%
+  inner_join(commuter_bus, by="trip_id") %>%select(1:8)
+bus_times_4m$half_trip_id <- as.character(bus_times_4m$half_trip_id)
+commuter_bus_stops$stop_id <- as.numeric(commuter_bus_stops$stop_id)
+commuter_bus_name <- commuter_bus_stops %>% select(3,5,6,7,8) %>% distinct()
+commuter_bus_4m <- bus_times_4m %>% inner_join(commuter_bus_name, by=c("stop_id", "route_id"))
+
+```
+
+
+```{r, echo=FALSE}
+
+MBTA_Ferry_Daily_Ridership <- read.csv("MBTA_Ferry_Daily_Ridership_by_Trip%2C_Route%2C_and_Stop.csv")
+stops_2021 <- read.delim("stops_2021.txt", ",", header = TRUE)
+Ferry_stop_name <- stops_2021 %>% filter(vehicle_type=="4")
+Ferry_stop_name$stop_name <- gsub("Charlestown", "Navy Yard", Ferry_stop_name$stop_name)
+Ferry_stop_name$stop_name <- gsub("George's Island", "Georges", Ferry_stop_name$stop_name)
+Ferry_stop_name$stop_name <- gsub("Logan Airport Ferry Terminal", "Logan", Ferry_stop_name$stop_name)
+Ferry_stop_name$stop_name <- gsub("Long Wharf (North)", "Long Wharf N", Ferry_stop_name$stop_name)
+Ferry_stop_name$stop_name <- gsub("Long Wharf (South)", "Long Wharf S", Ferry_stop_name$stop_name)
+MBTA_Ferry_Daily_Ridership$arrival_terminal <- gsub("LOGAN", "Logan", MBTA_Ferry_Daily_Ridership$arrival_terminal)
+MBTA_Ferry_Daily_Ridership$arrival_terminal <- gsub("HULL", "Hull", MBTA_Ferry_Daily_Ridership$arrival_terminal)
+Ferry_stop_lat <- Ferry_stop_name %>% select(stop_name, stop_lon, stop_lat)
+```
+
+
+```{r, echo=FALSE}
+Ferry_stop_time <- MBTA_Ferry_Daily_Ridership %>% inner_join(Ferry_stop_lat, by=c("departure_terminal"="stop_name"))
+colnames(Ferry_stop_time)[22] <- "stop_lon_depa"
+colnames(Ferry_stop_time)[23] <- "stop_lat_depa"
+Ferry_stop_time  %<>% inner_join(Ferry_stop_lat, by=c("arrival_terminal"="stop_name"))
+colnames(Ferry_stop_time)[24] <- "stop_lon_arrival"
+colnames(Ferry_stop_time)[25] <- "stop_lat_arrival"
+Ferry_stop_time$actual_departure <- strptime(Ferry_stop_time$actual_departure, "%Y-%m-%d %H:%M:%OS")
+Ferry_stop_time$actual_arrival <- strptime(Ferry_stop_time$actual_arrival, "%Y-%m-%d %H:%M:%OS")
+Ferry_stop_time %<>% mutate(travel_time = difftime(actual_arrival,actual_departure, units = "mins" ))
+
+```
+## MBTA Ferry 
+The MBTA ferry service offers multiple routes, including service to locations in Boston, Charlestown, Hull, Hingham, and Quincy. The ferries offer a convenient and scenic way to travel around the Boston harbor and surrounding areas. The MBTA ferry service operates on a schedule, with departures at regular intervals throughout the day. Fares for the ferry service vary depending on the route and type of ticket.
+In different months, ferry service have different schedule. For example, in November, there ten different trips, but in September, there are more trips than November. The next two tables are correspond to this situation  
+```{r, echo=FALSE}
+Ferry_stop_time %>% filter(service_date=="2018/11/05 05:00:00+00")%>% select(sub_route) %>% distinct() %>% 
+  kable(caption = "<b>Ferry Schedule in November</b>", digits = 3, format.args = list(big.mark = ",")) %>%   kable_minimal(full_width = F)
+```
+
+```{r, echo=FALSE}
+Ferry_stop_time %>% filter(service_date=="2019/09/25 04:00:00+00")%>% select(sub_route) %>% distinct() %>%  kable(caption = "<b>Ferry Schedule in September</b>", digits = 3, format.args = list(big.mark = ",")) %>%   kable_minimal(full_width = F)
+```
+
+```{r, echo=FALSE}
+week_Jan <- c("2021/01/19 05:00:00+00","2021/01/20 05:00:00+00", "2021/01/21 05:00:00+00", "2021/01/18 05:00:00+00")
+week_Sep <- c("2021/09/01 04:00:00+00","2021/09/02 04:00:00+00
+","2021/09/08 04:00:00+00", "2021/09/03 04:00:00+00","2021/09/09 04:00:00+00","2021/09/10 04:00:00+00")
+Ferry_Jan <- Ferry_stop_time %>% filter(service_date %in% week_Jan)
+Ferry_Sep <- Ferry_stop_time %>% filter(service_date %in% week_Sep)
+```
+
+
+```{r, echo=FALSE}
+d1 <- Ferry_Jan %>% ggplot(aes(x=as.numeric(travel_time)) )+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Ferry Travel Time in Jan")
+d2 <- Ferry_Sep %>% ggplot(aes(x=as.numeric(travel_time)) )+
+  geom_histogram(aes(y=after_stat(density)),colour="black", fill="white", bins = 30)+
+  geom_density(linewidth=1, colour=4,
+               fill=4, alpha=0.25)+
+  ggtitle("Ferry Travel Time in Sep")
+grid.arrange(d1,d2,ncol=2)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
