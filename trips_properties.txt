@@ -1,0 +1,827 @@
+trip_id,trip_property_id,value
+52726824-PRIV42022-hpp42011-Weekday-01,note,Will go to Point Shirley if requested
+52727324-PRIV42022-hpp42ns1-Weekday-01,note,Will go to Point Shirley if requested
+53143679-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53143679-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53143680-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53143680-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53144223-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53144223-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53144902-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53144902-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53144921-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53144921-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53145774-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53145774-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53145787-BUS42022-hbt42011-Weekday-02,note,Does not run during school vacation
+53145787-BUS42022-hbt42011-Weekday-02,trip_type,supplemental
+53164869-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53164869-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53164974-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53164974-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53164978-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53164978-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165049-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165049-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165118-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165118-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165210-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165210-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165234-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165234-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165243-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165243-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165305-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165305-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165318-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165318-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53165499-BUS42022-hba42011-Weekday-02,note,Does not run during school vacation
+53165499-BUS42022-hba42011-Weekday-02,trip_type,supplemental
+53257825-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257825-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257828-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257828-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257829-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257829-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257830-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257830-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257831-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257831-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257832-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257832-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257833-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257833-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257834-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257834-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257835-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257835-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257837-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257837-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257838-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257838-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257839-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257839-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257840-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257840-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257841-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257841-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257844-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257844-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257845-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257845-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257846-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257846-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257847-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257847-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257849-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257849-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257850-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257850-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257852-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257852-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257853-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257853-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257854-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257854-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257855-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257855-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257856-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257856-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257857-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257857-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257858-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257858-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257859-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257859-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257860-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257860-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53257861-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53257861-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258345-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258345-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258500-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258500-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258546-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258546-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258643-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258643-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258826-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258826-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53258869-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53258869-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259071-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259071-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259251-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259251-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259252-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259252-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259275-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259275-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259281-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259281-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259285-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259285-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259286-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259286-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259387-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259387-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53259904-BUS42022-hbb42011-Weekday-02,note,Does not run during school vacation
+53259904-BUS42022-hbb42011-Weekday-02,trip_type,supplemental
+53284972-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284972-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284973-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284973-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284974-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284974-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284975-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284975-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284976-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284976-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284977-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284977-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53284994-BUS42022-hbt42l31-Saturday-02,note,Does not run during school vacation
+53284994-BUS42022-hbt42l31-Saturday-02,trip_type,supplemental
+53304696-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53304696-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53304778-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53304778-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53304901-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53304901-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305062-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305062-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305138-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305138-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305168-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305168-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305204-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305204-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305277-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305277-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305291-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305291-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305359-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305359-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305447-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305447-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305577-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305577-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305665-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305665-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305704-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305704-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305927-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305927-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53305981-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53305981-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306142-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306142-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306163-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306163-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306169-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306169-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306235-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306235-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306313-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306313-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306321-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306321-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306322-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306322-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306394-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306394-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306479-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306479-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306525-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306525-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306530-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306530-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306577-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306577-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306604-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306604-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306654-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306654-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306665-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306665-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306666-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306666-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306673-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306673-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306685-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306685-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306688-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306688-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306697-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306697-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306699-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306699-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306708-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306708-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306770-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306770-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306772-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306772-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306776-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306776-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306777-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306777-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306779-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306779-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306816-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306816-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306866-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306866-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306909-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306909-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306932-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306932-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53306997-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53306997-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53307028-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53307028-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53307085-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53307085-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53307092-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53307092-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53307227-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53307227-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53307378-BUS42022-hbc42fr1-Weekday-02,note,Does not run during school vacation
+53307378-BUS42022-hbc42fr1-Weekday-02,trip_type,supplemental
+53314267-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314267-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314361-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314361-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314499-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314499-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314674-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314674-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314758-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314758-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314792-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314792-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314832-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314832-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314915-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314915-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53314931-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53314931-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315007-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315007-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315111-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315111-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315259-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315259-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315367-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315367-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315410-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315410-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315663-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315663-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315721-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315721-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315906-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315906-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315929-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315929-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53315937-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53315937-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316015-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316015-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316099-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316099-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316107-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316107-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316108-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316108-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316188-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316188-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316283-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316283-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316335-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316335-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316342-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316342-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316401-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316401-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316430-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316430-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316488-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316488-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316499-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316499-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316500-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316500-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316509-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316509-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316523-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316523-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316526-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316526-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316539-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316539-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316541-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316541-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316552-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316552-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316624-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316624-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316626-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316626-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316630-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316630-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316631-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316631-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316635-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316635-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316674-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316674-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316728-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316728-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316775-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316775-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316804-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316804-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316877-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316877-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316910-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316910-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316973-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316973-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53316984-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53316984-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53317133-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53317133-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53317308-BUS42022-hbc42wk1-Weekday-02,note,Does not run during school vacation
+53317308-BUS42022-hbc42wk1-Weekday-02,trip_type,supplemental
+53357740-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357740-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357741-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357741-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357742-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357742-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357743-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357743-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357744-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357744-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357745-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357745-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357746-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357746-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357747-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357747-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357748-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357748-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357749-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357749-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357750-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357750-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357751-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357751-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357752-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357752-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357753-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357753-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357754-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357754-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357755-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357755-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357756-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357756-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357757-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357757-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53357758-BUS42022-hba42l31-Saturday-02,note,Does not run during school vacation
+53357758-BUS42022-hba42l31-Saturday-02,trip_type,supplemental
+53364299-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364299-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364300-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364300-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364301-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364301-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364302-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364302-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364303-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364303-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364304-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364304-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364305-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364305-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364306-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364306-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364307-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364307-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364308-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364308-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364309-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364309-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364310-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364310-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364311-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364311-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364312-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364312-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364313-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364313-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364314-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364314-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364315-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364315-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364316-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364316-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364317-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364317-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364318-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364318-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364319-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364319-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364320-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364320-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364321-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364321-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364322-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364322-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364323-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364323-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364324-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364324-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364325-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364325-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364326-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364326-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364327-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364327-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364328-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364328-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364329-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364329-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364330-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364330-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364331-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364331-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364332-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364332-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364333-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364333-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364334-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364334-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364335-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364335-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364336-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364336-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364337-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364337-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364338-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364338-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364339-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364339-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364340-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364340-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364341-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364341-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364342-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364342-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53364343-BUS42022-hbc42l31-Saturday-02,note,Does not run during school vacation
+53364343-BUS42022-hbc42l31-Saturday-02,trip_type,supplemental
+53383271-BUS42022-hbs42L31-Saturday-02,note,Does not run during school vacation
+53383271-BUS42022-hbs42L31-Saturday-02,trip_type,supplemental
+53383272-BUS42022-hbs42L31-Saturday-02,note,Does not run during school vacation
+53383272-BUS42022-hbs42L31-Saturday-02,trip_type,supplemental
+53385770-BUS42022-hbs42sp1-Weekday-02,note,Does not run during school vacation
+53385770-BUS42022-hbs42sp1-Weekday-02,trip_type,supplemental
+53385771-BUS42022-hbs42sp1-Weekday-02,note,Does not run during school vacation
+53385771-BUS42022-hbs42sp1-Weekday-02,trip_type,supplemental
+53403316-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403316-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403317-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403317-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403318-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403318-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403319-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403319-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403320-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403320-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403321-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403321-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403322-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403322-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403323-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403323-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403324-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403324-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403325-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403325-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403326-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403326-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403327-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403327-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403328-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403328-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403329-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403329-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403330-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403330-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403331-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403331-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403332-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403332-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403333-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403333-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403334-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403334-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403335-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403335-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403336-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403336-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53403337-BUS42022-hbl42011-Weekday-02,note,Does not run during school vacation
+53403337-BUS42022-hbl42011-Weekday-02,trip_type,supplemental
+53410505-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410505-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410554-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410554-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410555-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410555-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410556-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410556-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410557-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410557-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410558-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410558-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410585-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410585-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410727-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410727-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410876-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410876-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53410892-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53410892-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53411222-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53411222-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53411223-BUS42022-hbq42011-Weekday-02,note,Does not run during school vacation
+53411223-BUS42022-hbq42011-Weekday-02,trip_type,supplemental
+53416610-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416610-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416659-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416659-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416660-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416660-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416661-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416661-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416662-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416662-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416663-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416663-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416664-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416664-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416665-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416665-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416666-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416666-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416667-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416667-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416668-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416668-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53416669-BUS42022-hbq42l31-Saturday-02,note,Does not run during school vacation
+53416669-BUS42022-hbq42l31-Saturday-02,trip_type,supplemental
+53423604-BUS42022-hbs42sw1-Weekday-02,note,Does not run during school vacation
+53423604-BUS42022-hbs42sw1-Weekday-02,trip_type,supplemental
+53423605-BUS42022-hbs42sw1-Weekday-02,note,Does not run during school vacation
+53423605-BUS42022-hbs42sw1-Weekday-02,trip_type,supplemental
+53435191-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435191-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435192-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435192-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435193-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435193-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435277-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435277-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435278-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435278-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435312-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435312-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435373-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435373-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435404-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435404-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435405-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435405-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435406-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435406-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435545-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435545-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435546-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435546-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435606-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435606-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435664-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435664-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435665-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435665-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53435666-BUS42022-hbf42011-Weekday-02,note,Does not run during school vacation
+53435666-BUS42022-hbf42011-Weekday-02,trip_type,supplemental
+53436986-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436986-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53436987-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436987-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53436988-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436988-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53436989-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436989-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53436990-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436990-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53436991-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53436991-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53437144-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53437144-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53437286-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53437286-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53437291-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53437291-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53437467-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53437467-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53437468-BUS42022-hbg42011-Weekday-02,note,Does not run during school vacation
+53437468-BUS42022-hbg42011-Weekday-02,trip_type,supplemental
+53445870-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445870-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445871-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445871-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445872-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445872-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445873-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445873-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445874-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445874-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445875-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445875-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445876-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445876-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445877-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445877-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445878-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445878-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445879-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445879-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445880-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445880-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445881-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445881-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445882-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445882-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445883-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445883-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445884-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445884-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445885-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445885-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445886-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445886-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445887-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445887-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445888-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445888-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445889-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445889-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445890-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445890-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53445891-BUS42022-hbl42l31-Saturday-02,note,Does not run during school vacation
+53445891-BUS42022-hbl42l31-Saturday-02,trip_type,supplemental
+53492462-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492462-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492463-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492463-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492464-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492464-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492465-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492465-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492466-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492466-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492467-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492467-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492468-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492468-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492469-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492469-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492470-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492470-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492471-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492471-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492472-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492472-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492473-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492473-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492474-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492474-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492475-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492475-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492476-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492476-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53492477-BUS42022-hbf42l31-Saturday-02,note,Does not run during school vacation
+53492477-BUS42022-hbf42l31-Saturday-02,trip_type,supplemental
+53495434-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495434-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495435-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495435-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495436-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495436-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495437-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495437-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495438-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495438-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495439-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495439-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495440-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495440-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495441-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495441-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495442-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495442-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53495443-BUS42022-hbg42l31-Saturday-02,note,Does not run during school vacation
+53495443-BUS42022-hbg42l31-Saturday-02,trip_type,supplemental
+53527317-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527317-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527318-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527318-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527319-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527319-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527320-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527320-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527321-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527321-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527322-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527322-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527323-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527323-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527324-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527324-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527325-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527325-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527326-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527326-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527327-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527327-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527328-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527328-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527329-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527329-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527330-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527330-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527331-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527331-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527332-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527332-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527333-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527333-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527334-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527334-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527335-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527335-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527336-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527336-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527337-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527337-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527338-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527338-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527339-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527339-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527340-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527340-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527341-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527341-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527342-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527342-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527343-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527343-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527344-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527344-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527345-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527345-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527346-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527346-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527347-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527347-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527348-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527348-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527349-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527349-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527350-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527350-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527351-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527351-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527352-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527352-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527353-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527353-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527354-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527354-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527355-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527355-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527356-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527356-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527357-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527357-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527358-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527358-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527359-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527359-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527360-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527360-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
+53527361-BUS42022-hbb42L31-Saturday-02,note,Does not run during school vacation
+53527361-BUS42022-hbb42L31-Saturday-02,trip_type,supplemental
