@@ -26,7 +26,7 @@ calendar_attributes <- read.delim("calendar_attributes.txt", ",",header = TRUE)
 route <- read.delim("routes.txt",",",header = TRUE)
 
 stops <- read.delim("stops.txt",",",header = TRUE)
-stop_times <- read.delim("stop_times.txt",",",header = TRUE)
+
 
 
 
@@ -93,11 +93,7 @@ ggplot(NumOfTripsByType1, aes(x=route_id, y=n, color=route_id))+
 ```
 
 
-```{r, echo=FALSE}
-stops_with_times <- inner_join(stop_times, stops, by="stop_id")
-trip_Id_name <- trips_total %>% select(trip_id, route_id,service_id ,route_desc, route_long_name)
-trips_stopstimes <- inner_join(trip_Id_name, stops_with_times, by="trip_id")
-```
+
 
 
 
